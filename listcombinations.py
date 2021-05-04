@@ -9,12 +9,12 @@ class Solution:
         '''
         #a=[1,2,1,3,5,1]
         n=len(arr)
-        total=2**n
+        total=2**n      #get count of total possible combination list
         s=[]
         for i in range(total):
             l1=[]
             for j in range(n):
-                if (i>>j & 1):
+                if (i>>j & 1):  
                     l1.append(arr[j])
             if arrnum is None:    
                 s.append(l1)
